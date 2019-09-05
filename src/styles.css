@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import '~ngx-toastr/toastr.css';  
+
+
+/* div {
+
+    margin: 5px;
+} */
+
+/* 
+.navbar {
+    display: none;
+} */
+
+/* .img {
+
+    width: 120%;
+    border-radius: 10px;
+} */
+/* 
+.myclass1 {
+    color: rgb(255, 0, 136);
+    background-color: blanchedalmond;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("assets/beige.svg") fixed;
+}
+
+.bigclass {
+    font-size: 3em;
+}
+
+.highlighted {
+    outline: 1px solid navy;
+    background-color: blanchedalmond;
+}
+.bubble { 
+    animation:pulse 1s infinite; 
+    -webkit-animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse {
+    0%      { transform:scale(1); }
+    25%     { transform:scale(2); }
+    75%     { transform:scale(1); }
+  }
+  @-webkit-keyframes pulse {
+    0%      { -webkit-transform:scale(1); }
+    50%     { -webkit-transform:scale(2); }
+    75%     { -webkit-transform:scale(1); }
+  }
+
+
+.one {
+    color: green;
+}
+.two {
+    font-size: 20px;
+}
+.three {
+    color: red;
+}
+.four {
+    font-size: 15px;
+} 
+/* #toast-container > div {
+    opacity:1;
+    background-color: rgb(216, 0, 0) !important;
+    margin-top: 30%;
+    margin-right: 50%;
+    
+} */
+
+
+.page-footer .font-small .indigo {
+
+    background-color: blueviolet !important; 
+}
+/* ------------------------------------------------------------------------ */

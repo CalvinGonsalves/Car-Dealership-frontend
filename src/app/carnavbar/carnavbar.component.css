@@ -1,0 +1,8 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bg-light {
+    background-color:  hsla(210, 17%, 98%, 0.753) !important;
+}

@@ -1,0 +1,78 @@
+<!-- <p class='bigclass'> Hello</p> -->
+
+<!-- <span  [ngClass] = "{'glyphicon glyphicon-star': isFilled,
+  'glyphicon glyphicon-star-empty': !isFilled}"  (click)= "onclick()" >Hello</span>
+<br> -->
+
+<!-- <button [ngClass] = "{myclass1:isActive, myclass2:!isActive}" (click)= "onclick()">Hello</button> -->
+<div>
+
+    <button  class = "btn btn-primary">Save</button>
+
+</div>
+<hr>
+<div>
+  <button [ngClass]="{
+      'btn': isButton,
+      'btn-primary': isPrimary,
+      'bigclass': isbig,
+      'bubble' : isbubble
+    }
+    " >
+    Simple
+  </button>
+</div>
+
+<div>
+  <input type="checkbox" (click)="toggleButton()"> Toggle Button class
+  
+  <input type="checkbox" (click)="toggleBigButton()"> Toggle Big Button
+  <input type="checkbox" (click)="toggleAnimation()"> Toggle Animation
+
+</div>
+<hr>
+<br>
+<br>
+
+<div>
+<button *ngIf="!contentHighlighted" (click)="contentHighlighted = true">
+  Highlight Content
+</button>
+
+<button *ngIf="contentHighlighted" (click)="contentHighlighted = false">
+  Un-Highlight Content
+</button>
+</div>
+
+<div [ngClass]="{'highlighted': contentHighlighted,'bubble' : isbubble }">
+  <h2>Content</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</div>
+
+
+<div [ngClass]="getCSSClasses('')">
+    Using NgClass with Component Method.
+   </div> 
+
+
+   <input type="checkbox" (click)="toggleAnimation()"> Toggle Animation
+
+  <!-- Template variable  passes #email value to component-->
+   <!-- Email : <input type = "text" #email  (keyup.enter) = "onKeyUp(email.value)" />    Template variable  passes #email value to component-->
+   <!-- <button (click) = "onSave($event)"> Save</button>  -->
+
+
+   <!-- Email : <input type="text"  [(ngModel)] = "email"   (keyup.enter) = "onKeyUp()" /> -->
+
